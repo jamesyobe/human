@@ -1,0 +1,30 @@
+.human-body {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  
+  .head {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+  }
+  
+  .torso {
+    width: 200px;
+    height: 200px;
+    background-color: green;
+  }
+  
+  .arms {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+  }
+  
+  .legs {
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+  }
+  
