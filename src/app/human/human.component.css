@@ -26,3 +26,39 @@
     color: black;
   
   }
+
+
+  .centered-container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh; /* Ensure the container takes the full viewport height */
+  }
+  
+  .centered-item {
+    text-align: center;
+    padding: 20px;
+  }
+  
+
+  .body-tooltip {
+    padding: 0.25rem;
+    border: 0.0625rem solid black;
+    background-color: white;
+    position: absolute;
+    font-size: 0.75rem;
+    width: auto;
+    height: auto;
+    pointer-events: none;
+    display: flex;
+    flex-direction: column;
+    z-index: 1000;
+  
+    &.body-tooltip-hide {
+      display: none;
+    }
+  }
+  
+  .text-value {
+    font-weight: bold;
+  }
