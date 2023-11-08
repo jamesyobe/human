@@ -46,11 +46,11 @@ export class HumanComponent implements OnInit {
       .append('path')
       .attr('d', (path: Pathsdetails) => path.d)
       .attr('id', (path: Pathsdetails) => path.id)
-      .attr('style', (path: Pathsdetails) => path.stroke)
+      .attr('stroke', (path: Pathsdetails) => path.stroke)
       .attr('fill', (path: Pathsdetails) => path.fill)
       .on('mouseenter', (event: MouseEvent, path: Pathsdetails) => {
         this.hoverDetails = path.id;   
-        d3.select(`#${path.id}`).attr('fill', 'green'); 
+        d3.select(`#${path.id}`).attr('fill', '#215e4a'); 
         this.bodyPartTooltipPositioning = {
           'left.px': event.pageX + 15,
           'top.px': event.pageY - 28,
@@ -71,11 +71,12 @@ export class HumanComponent implements OnInit {
       .append('path')
       .attr('d', (path: Pathsdetails) => path.d)
       .attr('id', (path: Pathsdetails) => path.id)
-      .attr('style', (path: Pathsdetails) => path.stroke)
+      .attr('stroke', (path: Pathsdetails) => path.stroke)
+      .attr('stroke-width',1)
       .attr('fill', (path: Pathsdetails) => path.fill)
       .on('mouseenter', (event: MouseEvent, path: Pathsdetails) => {
         this.hoverDetails = path.id;   
-        d3.select(`#${path.id}`).attr('fill', 'green'); 
+        d3.select(`#${path.id}`).attr('fill', '#215e4a'); 
         this.bodyPartTooltipPositioning = {
           'left.px': event.pageX + 15,
           'top.px': event.pageY - 28,

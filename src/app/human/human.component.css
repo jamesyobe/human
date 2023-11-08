@@ -32,12 +32,12 @@
     display: flex;
     justify-content: center; /* Center horizontally */
     align-items: center; /* Center vertically */
-    height: 100vh; /* Ensure the container takes the full viewport height */
+    height: auto; /* Ensure the container takes the full viewport height */
   }
   
   .centered-item {
     text-align: center;
-    padding: 20px;
+  
   }
   
 
