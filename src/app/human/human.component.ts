@@ -57,7 +57,7 @@ export class HumanComponent implements OnInit {
         };
       })
       .on('mouseleave', (event: MouseEvent, path: Pathsdetails) => {
-        this.hoverDetails = path.id;
+        this.hoverDetails = 'none';
         d3.select(`#${path.id}`).attr('fill', path.fill);
       });
   }
@@ -83,7 +83,7 @@ export class HumanComponent implements OnInit {
         };
       })
       .on('mouseleave', (event: MouseEvent, path: Pathsdetails) => {
-        this.hoverDetails = path.id;
+        this.hoverDetails = 'none';
         d3.select(`#${path.id}`).attr('fill', path.fill);
       });
 

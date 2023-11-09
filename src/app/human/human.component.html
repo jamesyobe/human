@@ -5,7 +5,7 @@
    <div class="centered-item"> 
       <svg width="259.22897" height="800" viewBox="0 0 800 1360" xml:space="preserve" #svgBackContainer></svg>
   </div>
-<div class="body-tooltip" *ngIf="hoverDetails" [ngClass]="{ 'body-tooltip-hide': !hoverDetails }"
+<div class="body-tooltip" *ngIf="hoverDetails != 'none'" [ngClass]="{ 'body-tooltip-hide': hoverDetails==='none' }"
    [ngStyle]="bodyPartTooltipPositioning" #bodyPartTooltip>
    <div>
       Name: <span class="text-value">{{ hoverDetails }}</span>
